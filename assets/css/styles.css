@@ -167,6 +167,29 @@ header .tagline {
 }
 
 
+#itchio {
+    padding: 30px 0;
+    background: #1E1E3C; /* Dark Blue/Purple */
+    border-top: 1px solid #3C3C3C;
+    border-bottom: 1px solid #3C3C3C;
+}
+
+#itchio h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Anak Paud', 'Arial', sans-serif;
+    color: #FF8C00; /* Orange */
+}
+
+#itchio p {
+    font-size: 16px;
+    text-align: center;
+    max-width: 700px;
+    margin: 10px auto;
+    color: #EAEAEA;
+}
+
 /* Footer */
 footer {
     background: #3C3C3C; /* Dark Gray */
