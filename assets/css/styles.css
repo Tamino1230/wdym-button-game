@@ -221,7 +221,7 @@ footer a:hover {
 
 .cta-button:hover {
     background-color: #FFB84D;
-    color: white;
+    color: rgb(31, 31, 31);
     transform: scale(1.05);
 }
 
