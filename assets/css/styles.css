@@ -1,0 +1,312 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E1E3C; /* Dark Blue/Purple from game */
+    color: #FFFFFF; /* White text for dark background */
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #3C3C3C; /* Dark Gray from game */
+    color: #FFFFFF;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #FF8C00 3px solid; /* Orange accent from game */
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Anak Paud', 'Arial', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+header .tagline {
+    text-align: center;
+    font-size: 20px;
+    color: #C8C8C8; /* Light Gray from game */
+}
+
+/* Hero Section */
+#hero {
+    min-height: 400px;
+    background: #1E1E3C; /* Dark Blue/Purple */
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #3C3C3C; /* Dark Gray border */
+}
+
+#hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Anak Paud', 'Arial', sans-serif;
+    color: #FF8C00; /* Orange for emphasis */
+}
+
+#hero p {
+    font-size: 18px;
+    color: #EAEAEA;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 30px 0;
+    background: #2a2a4a; /* Slightly lighter shade of dark blue/purple */
+}
+
+#gallery h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Anak Paud', 'Arial', sans-serif;
+    color: #FF8C00; /* Orange */
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #FF8C00; /* Orange border for images */
+    box-shadow: 0 0 10px rgba(255,140,0,0.3); /* Orange glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255,255,100,0.5); /* Yellow glow on hover */
+}
+
+/* About Section */
+#about {
+    padding: 30px 0;
+    background: #1E1E3C; /* Dark Blue/Purple */
+    border-top: 1px solid #3C3C3C;
+    border-bottom: 1px solid #3C3C3C;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Anak Paud', 'Arial', sans-serif;
+    color: #FF8C00; /* Orange */
+}
+
+#about p {
+    font-size: 16px;
+    text-align: center;
+    max-width: 700px;
+    margin: 10px auto;
+    color: #EAEAEA;
+}
+
+#contacts {
+    padding: 30px 0;
+    background: #1E1E3C; /* Dark Blue/Purple */
+    border-top: 1px solid #3C3C3C;
+    border-bottom: 1px solid #3C3C3C;
+}
+
+#contacts h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Anak Paud', 'Arial', sans-serif;
+    color: #FF8C00; /* Orange */
+}
+
+#contacts p {
+    font-size: 16px;
+    text-align: center;
+    max-width: 700px;
+    margin: 10px auto;
+    color: #EAEAEA;
+}
+
+#languages {
+    padding: 30px 0;
+    background: #1E1E3C; /* Dark Blue/Purple */
+    border-top: 1px solid #3C3C3C;
+    border-bottom: 1px solid #3C3C3C;
+}
+
+#languages h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Anak Paud', 'Arial', sans-serif;
+    color: #FF8C00; /* Orange */
+}
+
+#languages p {
+    font-size: 16px;
+    text-align: center;
+    max-width: 700px;
+    margin: 10px auto;
+    color: #EAEAEA;
+}
+
+
+/* Footer */
+footer {
+    background: #3C3C3C; /* Dark Gray */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 0; /* Removed margin-top as sections have borders now */
+    border-top: #FF8C00 3px solid; /* Orange accent */
+}
+
+footer a {
+    color: #FFFF64; /* Yellow for links in footer */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FF8C00; /* Orange on hover */
+    text-decoration: underline;
+}
+
+/* Font face for Anak Paud */
+@font-face {
+    font-family: 'Anak Paud';
+    src: url('../fonts/anak_paud/Anak Paud.otf') format('opentype'),
+         url('../fonts/anak_paud/Anak Paud.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Simple fade-in animation for elements */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF8C00;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FFB84D;
+    color: white;
+    transform: scale(1.05);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    color: #FF8C00;
+    font-family: 'Arial', sans-serif;
+    background: transparent;
+    text-align: center;
+    width: fit-content;
+}
+
+a {
+    color: #FFFF64;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF8C00; 
+    text-decoration: underline;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    background: #2a2a4a; 
+    border-bottom: 2px solid #FF8C00;
+    box-shadow: 0 2px 8px rgba(30,30,60,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    list-style: none;
+}
+
+.nav-bar li {
+    margin: 0;
+}
+
+.nav-bar a {
+    display: block;
+    padding: 16px 0;
+    font-size: 18px;
+    font-family: 'Anak Paud', 'Arial', sans-serif;
+    color: #FFFF64;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-bar a:hover,
+.nav-bar a:focus {
+    color: #FF8C00;
+    border-bottom: 2px solid #FF8C00;
+    background: rgba(255,140,0,0.07);
+    outline: none;
+}
+
+@media (max-width: 700px) {
+    .nav-bar ul {
+        flex-direction: column;
+        gap: 0;
+    }
+    .nav-bar a {
+        padding: 12px 0;
+        font-size: 16px;
+    }
+}
